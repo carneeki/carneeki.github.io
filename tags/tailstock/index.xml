@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tailstock on Adam Carmichael&#39;s Website</title>
+    <link>https://220.233.96.162:1313/tags/tailstock/</link>
+    <description>Recent content in Tailstock on Adam Carmichael&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Sat, 16 Mar 2019 07:48:03 +1100</lastBuildDate>
+    
+	<atom:link href="https://220.233.96.162:1313/tags/tailstock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lathe / Tailstock Rack for Better Drilling</title>
+      <link>https://220.233.96.162:1313/projects/g0602/racktailstock/</link>
+      <pubDate>Sat, 16 Mar 2019 07:48:03 +1100</pubDate>
+      
+      <guid>https://220.233.96.162:1313/projects/g0602/racktailstock/</guid>
+      <description>Introduction - The problem so far The CQ6125 I received had very poor heat treatment on the screw to feed the quill forwards, and the thread has cracked several times near the tip reducing the travel by a few millimetres. When combined with MT3 tooling with a tang, a further 25mm is lost, reducing the total travel to about 35mm out of 65mm! I can get by with tangless tapers, but there has to be a better way.</description>
+    </item>
+    
+  </channel>
+</rss>

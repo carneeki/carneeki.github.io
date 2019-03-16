@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dro on Adam Carmichael&#39;s Website</title>
+    <link>https://220.233.96.162:1313/tags/dro/</link>
+    <description>Recent content in Dro on Adam Carmichael&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Tue, 10 Apr 2018 07:48:03 +1100</lastBuildDate>
+    
+	<atom:link href="https://220.233.96.162:1313/tags/dro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lathe / OpenDRO : Know where to go</title>
+      <link>https://220.233.96.162:1313/projects/g0602/opendro/</link>
+      <pubDate>Tue, 10 Apr 2018 07:48:03 +1100</pubDate>
+      
+      <guid>https://220.233.96.162:1313/projects/g0602/opendro/</guid>
+      <description>Introduction - The problem so far The carriage handle on my lathe does not have a graduated dial, and with the amount of backlash between the handle and the rack, I would not be able to trust it anyway. Some closed loop measuring would be nice!
+A solution HAFCO sell some inexpensive but good quality glass scales. A glass scale is a piece of glass mounted in a case and is etched at regular but tiny intervals.</description>
+    </item>
+    
+  </channel>
+</rss>

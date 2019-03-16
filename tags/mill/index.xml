@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mill on Adam Carmichael&#39;s Website</title>
-    <link>https://220.233.96.162:1313/tags/mill/</link>
+    <link>https://carneeki.github.io/tags/mill/</link>
     <description>Recent content in Mill on Adam Carmichael&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     <lastBuildDate>Mon, 17 Dec 2018 01:00:03 +1100</lastBuildDate>
     
-	<atom:link href="https://220.233.96.162:1313/tags/mill/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carneeki.github.io/tags/mill/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mill / CNC Conversion</title>
-      <link>https://220.233.96.162:1313/projects/rf30/cnc/</link>
+      <link>https://carneeki.github.io/projects/rf30/cnc/</link>
       <pubDate>Mon, 17 Dec 2018 01:00:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/rf30/cnc/</guid>
+      <guid>https://carneeki.github.io/projects/rf30/cnc/</guid>
       <description>Conversion of the RF30 to CNC was not an easy task for me. Originally, I wanted to make circuit boards without the use of chemicals. This is a process called &amp;ldquo;isolation routing&amp;rdquo; where a very small router bit cutter goes around the traces of the copper to isolate that trace. The board is then drilled and removed for soldering.
 When I started this project in 2012, I received a lot of bad advice from a close family friend, a machinist of over 50 years, who I thought knew better.</description>
     </item>
     
     <item>
       <title>Mill / Captive Drawbar</title>
-      <link>https://220.233.96.162:1313/projects/rf30/captivedrawbar/</link>
+      <link>https://carneeki.github.io/projects/rf30/captivedrawbar/</link>
       <pubDate>Mon, 17 Dec 2018 01:00:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/rf30/captivedrawbar/</guid>
+      <guid>https://carneeki.github.io/projects/rf30/captivedrawbar/</guid>
       <description>Introduction A drawbar is basically a really long screw or bolt which pulls a collet (or other tool) up into a taper. Sometimes the tool gets stuck in the taper, and so instead of the tool (&amp;ldquo;nut&amp;rdquo;) being pushed down, the drawbar (&amp;ldquo;screw&amp;rdquo;) is pushed up. A captive drawbar holds the drawbar down so it cannot be pushed up, this forces the tool out of the taper.
 A captive drawbar is a neat addition to a vertical milling machine because it improves the usability of the machine in a subtle way.</description>
     </item>
     
     <item>
       <title>Mill / Intro</title>
-      <link>https://220.233.96.162:1313/projects/rf30/</link>
+      <link>https://carneeki.github.io/projects/rf30/</link>
       <pubDate>Mon, 17 Dec 2018 01:00:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/rf30/</guid>
+      <guid>https://carneeki.github.io/projects/rf30/</guid>
       <description>I have an RF30 milling machine, manufactured by Rong Fu in Taiwan, but has been cloned by many. It is a round column machine, and sold by Grizzly and Harbor Freight in the US, and HAFCO in Australia. The biggest thing I have done to this machine is convert it to CNC with ballscrews and the GRBL controller.
  CNC conversion Belt guard removal VFD (in progress)  </description>
     </item>

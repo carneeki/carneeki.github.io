@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Adam Carmichael&#39;s Website</title>
-    <link>https://220.233.96.162:1313/tags/projects/</link>
+    <link>https://carneeki.github.io/tags/projects/</link>
     <description>Recent content in Projects on Adam Carmichael&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     <lastBuildDate>Sat, 16 Mar 2019 07:48:03 +1100</lastBuildDate>
     
-	<atom:link href="https://220.233.96.162:1313/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carneeki.github.io/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lathe / Tailstock Rack for Better Drilling</title>
-      <link>https://220.233.96.162:1313/projects/g0602/racktailstock/</link>
+      <link>https://carneeki.github.io/projects/g0602/racktailstock/</link>
       <pubDate>Sat, 16 Mar 2019 07:48:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/g0602/racktailstock/</guid>
+      <guid>https://carneeki.github.io/projects/g0602/racktailstock/</guid>
       <description>Introduction - The problem so far The CQ6125 I received had very poor heat treatment on the screw to feed the quill forwards, and the thread has cracked several times near the tip reducing the travel by a few millimetres. When combined with MT3 tooling with a tang, a further 25mm is lost, reducing the total travel to about 35mm out of 65mm! I can get by with tangless tapers, but there has to be a better way.</description>
     </item>
     
     <item>
       <title>Lathe / Multifix A 40 position QCTP</title>
-      <link>https://220.233.96.162:1313/projects/g0602/multifix/</link>
+      <link>https://carneeki.github.io/projects/g0602/multifix/</link>
       <pubDate>Sun, 10 Mar 2019 01:00:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/g0602/multifix/</guid>
+      <guid>https://carneeki.github.io/projects/g0602/multifix/</guid>
       <description>I acquired a Chinese knockoff of the Swiss Multifix (size A) quick change tool post from my good friend Emma, along with a couple of 16mm tool holders and a blank tool holder suitable for making custom tools with.
 This QCTP is truly exceptional compared to the tiny Fortuna/Dickson style that I got shortly after the lathe and really was undersized. The Multifix A is perhaps the largest toolpost one can comfortably use with this machine, and while most of the toolholders are for 16mm (5/8 in) tools, the largest tools one can hold is 14mm (a bit over 1/2 in).</description>
     </item>
     
     <item>
       <title>Mill / CNC Conversion</title>
-      <link>https://220.233.96.162:1313/projects/rf30/cnc/</link>
+      <link>https://carneeki.github.io/projects/rf30/cnc/</link>
       <pubDate>Mon, 17 Dec 2018 01:00:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/rf30/cnc/</guid>
+      <guid>https://carneeki.github.io/projects/rf30/cnc/</guid>
       <description>Conversion of the RF30 to CNC was not an easy task for me. Originally, I wanted to make circuit boards without the use of chemicals. This is a process called &amp;ldquo;isolation routing&amp;rdquo; where a very small router bit cutter goes around the traces of the copper to isolate that trace. The board is then drilled and removed for soldering.
 When I started this project in 2012, I received a lot of bad advice from a close family friend, a machinist of over 50 years, who I thought knew better.</description>
     </item>
     
     <item>
       <title>Mill / Captive Drawbar</title>
-      <link>https://220.233.96.162:1313/projects/rf30/captivedrawbar/</link>
+      <link>https://carneeki.github.io/projects/rf30/captivedrawbar/</link>
       <pubDate>Mon, 17 Dec 2018 01:00:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/rf30/captivedrawbar/</guid>
+      <guid>https://carneeki.github.io/projects/rf30/captivedrawbar/</guid>
       <description>Introduction A drawbar is basically a really long screw or bolt which pulls a collet (or other tool) up into a taper. Sometimes the tool gets stuck in the taper, and so instead of the tool (&amp;ldquo;nut&amp;rdquo;) being pushed down, the drawbar (&amp;ldquo;screw&amp;rdquo;) is pushed up. A captive drawbar holds the drawbar down so it cannot be pushed up, this forces the tool out of the taper.
 A captive drawbar is a neat addition to a vertical milling machine because it improves the usability of the machine in a subtle way.</description>
     </item>
     
     <item>
       <title>Lathe / OpenDRO : Know where to go</title>
-      <link>https://220.233.96.162:1313/projects/g0602/opendro/</link>
+      <link>https://carneeki.github.io/projects/g0602/opendro/</link>
       <pubDate>Tue, 10 Apr 2018 07:48:03 +1100</pubDate>
       
-      <guid>https://220.233.96.162:1313/projects/g0602/opendro/</guid>
+      <guid>https://carneeki.github.io/projects/g0602/opendro/</guid>
       <description>Introduction - The problem so far The carriage handle on my lathe does not have a graduated dial, and with the amount of backlash between the handle and the rack, I would not be able to trust it anyway. Some closed loop measuring would be nice!
 A solution HAFCO sell some inexpensive but good quality glass scales. A glass scale is a piece of glass mounted in a case and is etched at regular but tiny intervals.</description>
     </item>

@@ -18,7 +18,7 @@
       
       <guid>https://carneeki.github.io/2019-03-20-logging-interface-state-with-openbsd-and-ifstated/</guid>
       <description>Sometimes your internet connection goes down&amp;hellip; &amp;hellip; and when it does, you might not know about it, such as if you are out. It can be handy to collect dates and times for when this happens. This is especially true if you have a SLA (service level agreement) with your ISP and are able to get compensation.
-Initially, I set about writing a script to search through ifconfig, when I stumbled upon [ifstated(4)](https://man.</description>
+Initially, I set about writing a script to search through ifconfig(8), when I stumbled upon ifstated(4).</description>
     </item>
     
   </channel>

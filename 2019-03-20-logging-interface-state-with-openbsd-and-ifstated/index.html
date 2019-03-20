@@ -303,9 +303,10 @@ can be handy to collect dates and times for when this happens. This is
 especially true if you have a SLA (service level agreement) with your ISP and
 are able to get compensation.</p>
 
-<p>Initially, I set about writing a script to search through <code>ifconfig</code>, when I
-stumbled upon <code>[ifstated(4)](https://man.openbsd.org/ifstated.8)</code>. This is a
-daemon that ships since OpenBSD 3.8 which does &ldquo;stuff&rdquo; when interfaces change.</p>
+<p>Initially, I set about writing a script to search through
+<a href="https://man.openbsd.org/ifconfig"><code>ifconfig(8)</code></a>, when I stumbled upon
+<a href="https://man.openbsd.org/ifstated.8"><code>ifstated(4)</code></a>. This is a daemon that ships
+since OpenBSD 3.8 which does &ldquo;stuff&rdquo; when interfaces change.</p>
 
 <p>Specifically, you can set up a complete state machine and configure the
 transition criteria. It even has init points so temporary transition states are
@@ -313,7 +314,7 @@ not required!</p>
 
 <p>This is possibly one of the simplest use cases imaginable, one can configure it
 for more complex for situations involving multi-homed connections, DMZs, and
-<code>[carp(4)](https://man.openbsd.org/carp)</code> virtual interfaces that might be part
+<a href="https://man.openbsd.org/carp"><code>carp(4)</code></a> virtual interfaces that might be part
 of multiple redundant connections.</p>
 
 <p>Here, I have logging working. I also thought it would be useful to use the built

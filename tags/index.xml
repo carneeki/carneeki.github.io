@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Adam Carmichael&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://carneeki.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Blog</title>
       <link>https://carneeki.github.io/tags/blog/</link>
-      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://carneeki.github.io/tags/blog/</guid>
       <description></description>
@@ -48,11 +48,38 @@
     </item>
     
     <item>
+      <title>Firewalls</title>
+      <link>https://carneeki.github.io/tags/firewalls/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://carneeki.github.io/tags/firewalls/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ifstated</title>
+      <link>https://carneeki.github.io/tags/ifstated/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://carneeki.github.io/tags/ifstated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lathe</title>
       <link>https://carneeki.github.io/tags/lathe/</link>
       <pubDate>Sat, 16 Mar 2019 07:48:03 +1100</pubDate>
       
       <guid>https://carneeki.github.io/tags/lathe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logging</title>
+      <link>https://carneeki.github.io/tags/logging/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://carneeki.github.io/tags/logging/</guid>
       <description></description>
     </item>
     
@@ -80,6 +107,24 @@
       <pubDate>Sun, 10 Mar 2019 01:00:03 +1100</pubDate>
       
       <guid>https://carneeki.github.io/tags/multifix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networks</title>
+      <link>https://carneeki.github.io/tags/networks/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://carneeki.github.io/tags/networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openbsd</title>
+      <link>https://carneeki.github.io/tags/openbsd/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://carneeki.github.io/tags/openbsd/</guid>
       <description></description>
     </item>
     

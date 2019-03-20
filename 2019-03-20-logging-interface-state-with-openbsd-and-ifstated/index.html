@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://carneeki.github.io/tags/blog/">
+  <link rel="canonical" href="https://carneeki.github.io/2019-03-20-logging-interface-state-with-openbsd-and-ifstated/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Blog | Adam Carmichael&#39;s Website</title>
+  <title>Logging your internet connection state in OpenBSD with ifstated | Adam Carmichael&#39;s Website</title>
 </head>
 
   <body>
@@ -181,7 +181,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -223,33 +223,192 @@
         <div>
           
   <main id="main">
-    <h1>Blog</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Logging your internet connection state in OpenBSD with ifstated
+    </h1>
+    <div class="date">
+      
+      <strong aria-hidden="true">Publish date: </strong>20 Mar 2019
+    </div>
     
-      <li>
-        <h2>
-          <a href="https://carneeki.github.io/2019-03-20-logging-interface-state-with-openbsd-and-ifstated/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Logging your internet connection state in OpenBSD with ifstated
-          </a>
-        </h2>
-      </li>        
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://carneeki.github.io/tags/blog/">blog</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://carneeki.github.io/tags/openbsd/">openbsd</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://carneeki.github.io/tags/ifstated/">ifstated</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://carneeki.github.io/tags/logging/">logging</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://carneeki.github.io/tags/firewalls/">firewalls</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://carneeki.github.io/tags/networks/">networks</a>
+            </li>
+          
+        </ul>
+      </div>
     
-      <li>
-        <h2>
-          <a href="https://carneeki.github.io/2019-03-16/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Blog Launch
-          </a>
-        </h2>
-      </li>        
     
-    </ul>
+      
+
+
+    
+    
+
+<h1 id="sometimes-your-internet-connection-goes-down">Sometimes your internet connection goes down&hellip;</h1>
+
+<p>&hellip; and when it does, you might not know about it, such as if you are out. It
+can be handy to collect dates and times for when this happens. This is
+especially true if you have a SLA (service level agreement) with your ISP and
+are able to get compensation.</p>
+
+<p>Initially, I set about writing a script to search through <code>ifconfig</code>, when I
+stumbled upon <code>[ifstated(4)](https://man.openbsd.org/ifstated.8)</code>. This is a
+daemon that ships since OpenBSD 3.8 which does &ldquo;stuff&rdquo; when interfaces change.</p>
+
+<p>Specifically, you can set up a complete state machine and configure the
+transition criteria. It even has init points so temporary transition states are
+not required!</p>
+
+<p>This is possibly one of the simplest use cases imaginable, one can configure it
+for more complex for situations involving multi-homed connections, DMZs, and
+<code>[carp(4)](https://man.openbsd.org/carp)</code> virtual interfaces that might be part
+of multiple redundant connections.</p>
+
+<p>Here, I have logging working. I also thought it would be useful to use the built
+in piezo transducer to buzz, but alas, <code>/dev/speaker</code> does not work on sparc64
+architecture. It may work on Raspberry Pi, and should work on i386 and amd64
+architectures.</p>
+
+<p>Backup <code>/etc/ifstated.conf</code> and paste this in there:</p>
+
+<pre><code># monitor pppoe0 and log on changes
+# inspired by http://openbsd-archive.7691.n7.nabble.com/ifstated-recipe-for-down-gt-up-td71811.html
+
+# state transitions:
+# auto        ---- detect down --&gt; pppoe0-down
+# auto        ---- detect up ----&gt; pppoe0-up 
+# pppoe0-up   ---- detect down --&gt; pppoe0-down
+# pppoe0-down ---- detect up ----&gt; pppoe0-up
+
+init-state auto
+
+pppoe0_up=&quot;pppoe0.link.up&quot;
+pppoe0_down=&quot;pppoe0.link.down&quot;
+
+state auto {
+    run &quot;logger -t ifstated pppoe0: AUTO!&quot;
+    if ($pppoe0_up) set-state pppoe0-up
+    if ($pppoe0_down) set-state pppoe0-down
+}
+
+state pppoe0-up {
+    init {
+        # TODO: play a beep. consider something like
+        run &quot;echo 'AAA' &gt; /dev/speaker&quot;    # does not work on sparc64
+        run &quot;logger -t ifstated pppoe0: UP!&quot;
+    }
+
+    if ($pppoe0_down) set-state pppoe0-down
+}
+
+
+state pppoe0-down {
+    init {
+        # TODO: play a beep. consider something like
+        run &quot;echo 'AAA' &gt; /dev/speaker&quot;    # does not work on sparc64
+        run &quot;logger -t ifstated pppoe0: DOWN!&quot;
+    }
+
+    if ($pppoe0_up) set-state pppoe0-up
+}
+
+</code></pre>
+
+<p>Configure and tweak as appropriate, and test it out using <code>ifstated -d</code> or
+<code>ifstated -dv</code> / <code>ifstated -dvv</code> with increased verbosity. <code>-d</code> sends output to
+<code>STDOUT</code>, and <code>-v</code> adds more and more verbose output.</p>
+
+<p>Once happy, start the daemon for realzies with <code>rcctl start ifstated</code> and to
+enable it at boot <code>rcctl enable ifstated</code>.</p>
+
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <div id="disqus_thread">
+        </div>
+        <script type="application/javascript">
+          function showComments() {
+            // Config
+var disqus_config = function () {
+};
+// Build and append comments 
+var d = document;
+var s = d.createElement('script');
+s.async = true;
+s.src = '//' + "carneeki" + '.disqus.com/embed.js';
+s.setAttribute('data-timestamp', + new Date());
+(d.head || d.body).appendChild(s);
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>

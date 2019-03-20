@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog Posts on Adam Carmichael&#39;s Website</title>
-    <link>https://carneeki.github.io/post/</link>
-    <description>Recent content in Blog Posts on Adam Carmichael&#39;s Website</description>
+    <title>Openbsd on Adam Carmichael&#39;s Website</title>
+    <link>https://carneeki.github.io/tags/openbsd/</link>
+    <description>Recent content in Openbsd on Adam Carmichael&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <lastBuildDate>Sat, 16 Mar 2019 10:17:00 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://carneeki.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carneeki.github.io/tags/openbsd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>https://carneeki.github.io/2019-03-20-logging-interface-state-with-openbsd-and-ifstated/</guid>
       <description>Sometimes your internet connection goes down&amp;hellip; &amp;hellip; and when it does, you might not know about it, such as if you are out. It can be handy to collect dates and times for when this happens. This is especially true if you have a SLA (service level agreement) with your ISP and are able to get compensation.
 Initially, I set about writing a script to search through ifconfig, when I stumbled upon [ifstated(4)](https://man.</description>
-    </item>
-    
-    <item>
-      <title>Blog Launch</title>
-      <link>https://carneeki.github.io/2019-03-16/</link>
-      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://carneeki.github.io/2019-03-16/</guid>
-      <description>Welp&amp;hellip; It&amp;rsquo;s been ages since I posted a YouTube video, and I think it&amp;rsquo;s mainly because it takes too much effort to make a video that isn&amp;rsquo;t completely poop, but, I&amp;rsquo;m able to take photos and write things up easier.</description>
     </item>
     
   </channel>

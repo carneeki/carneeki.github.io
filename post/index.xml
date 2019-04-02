@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Improving Firefox start times by indexing SQLite Databases</title>
+      <link>https://carneeki.github.io/2019-04-03-improving-load-times-by-indexing-firefox-sqlite-databases/</link>
+      <pubDate>Wed, 03 Apr 2019 04:01:46 +1100</pubDate>
+      
+      <guid>https://carneeki.github.io/2019-04-03-improving-load-times-by-indexing-firefox-sqlite-databases/</guid>
+      <description>Firefox was slow to load&amp;hellip; My desktop should be able to load Firefox up in under a few seconds, even if the hard drives are spinning rust rather than SSDs.
+Upon searching, I read that indexing the SQLite databases might help improve load times if you&amp;rsquo;re lucky and the stars are aligned just right.
+In Linux / BSD / (some other Unix-like OS) command line, navigate to your profile directory.</description>
+    </item>
+    
+    <item>
       <title>Logging your internet connection state in OpenBSD with ifstated</title>
       <link>https://carneeki.github.io/2019-03-20-logging-interface-state-with-openbsd-and-ifstated/</link>
       <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://carneeki.github.io/2019-04-03-improving-load-times-by-indexing-firefox-sqlite-databases/</loc>
+    <lastmod>2019-04-03T04:01:46+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://carneeki.github.io/2019-03-20-logging-interface-state-with-openbsd-and-ifstated/</loc>
     <lastmod>2019-03-20T00:00:00+00:00</lastmod>
   </url>
@@ -92,6 +97,12 @@
   </url>
   
   <url>
+    <loc>https://carneeki.github.io/tags/firefox/</loc>
+    <lastmod>2019-04-03T04:01:46+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://carneeki.github.io/tags/firewalls/</loc>
     <lastmod>2019-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -110,8 +121,20 @@
   </url>
   
   <url>
+    <loc>https://carneeki.github.io/tags/linux/</loc>
+    <lastmod>2019-04-03T04:01:46+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://carneeki.github.io/tags/logging/</loc>
     <lastmod>2019-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://carneeki.github.io/tags/maintenance/</loc>
+    <lastmod>2019-04-03T04:01:46+11:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -152,8 +175,20 @@
   </url>
   
   <url>
+    <loc>https://carneeki.github.io/tags/performance/</loc>
+    <lastmod>2019-04-03T04:01:46+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://carneeki.github.io/tags/projects/</loc>
     <lastmod>2019-03-16T07:48:03+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://carneeki.github.io/tags/sqlite/</loc>
+    <lastmod>2019-04-03T04:01:46+11:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -166,6 +201,12 @@
   <url>
     <loc>https://carneeki.github.io/tags/tailstock/</loc>
     <lastmod>2019-03-16T07:48:03+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://carneeki.github.io/tags/xargs/</loc>
+    <lastmod>2019-04-03T04:01:46+11:00</lastmod>
     <priority>0</priority>
   </url>
   

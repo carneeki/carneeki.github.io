@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maintenance on Adam Carmichael&#39;s Website</title>
+    <link>https://carneeki.github.io/tags/maintenance/</link>
+    <description>Recent content in Maintenance on Adam Carmichael&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Wed, 03 Apr 2019 04:01:46 +1100</lastBuildDate>
+    
+	<atom:link href="https://carneeki.github.io/tags/maintenance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improving Firefox start times by indexing SQLite Databases</title>
+      <link>https://carneeki.github.io/2019-04-03-improving-load-times-by-indexing-firefox-sqlite-databases/</link>
+      <pubDate>Wed, 03 Apr 2019 04:01:46 +1100</pubDate>
+      
+      <guid>https://carneeki.github.io/2019-04-03-improving-load-times-by-indexing-firefox-sqlite-databases/</guid>
+      <description>Firefox was slow to load&amp;hellip; My desktop should be able to load Firefox up in under a few seconds, even if the hard drives are spinning rust rather than SSDs.
+Upon searching, I read that indexing the SQLite databases might help improve load times if you&amp;rsquo;re lucky and the stars are aligned just right.
+In Linux / BSD / (some other Unix-like OS) command line, navigate to your profile directory.</description>
+    </item>
+    
+  </channel>
+</rss>
